@@ -1,0 +1,275 @@
+body{
+    background-image: linear-gradient(to right,lightseagreen, rgb(206, 206, 67));
+    /* background-color: black; */
+    overflow-x: hidden;
+
+
+}
+.blur{
+    filter:blur(3px);
+    z-index: -1;
+}
+.main{
+    display: flex;
+    width:50%;
+    justify-content: space-between;
+}
+
+h2{
+    font-weight: lighter;
+     margin-bottom: 6px;
+}
+.headline {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 20%;
+}
+.head{
+    font-weight: 700;
+    font-size: 56px;
+    padding-right:10px;
+}
+.lists{
+    font-weight: 100;
+    font-size: 56px;
+    color: black;
+}
+.addList{
+    display: flex;
+    justify-content: space-between;
+    float: right;
+    align-items: center;
+}
+.first{
+    width: 90%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    align-content: space-around;
+    flex-wrap: wrap;
+}
+.task{
+    background-color: #fff;
+    width: 18vw;
+    height: 50vh;
+    border: 2px solid tomato;
+    border-radius: 10px;
+    box-shadow: 4px 4px 12px gray;
+    margin: 2%;
+    padding: 2%;
+    text-align: center;
+    transition: transform .2s;
+    
+}
+
+.task_body{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    padding-top: 10px;
+    font-size: 20px;
+}
+.task_title{
+    margin: 0%;
+    font-size: 26px;
+}
+.material-icons{
+    color: orangered;
+    padding:0px 10px 0px 0px;
+    font-size: 40px;
+    cursor: pointer;
+}
+.material-icons:active {
+    transform: scale(0.9);
+}
+.addd{
+    display: flex;
+    align-items: center;
+    font-size: 36px;
+    font-weight: 100px;
+    color: black;
+}
+.whole {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5%;
+}
+hr{
+    width: 100%;
+    margin-right:0px;
+}
+
+.addNewList {
+    display: none;
+}
+.addNewListActive {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid tomato;
+    border-radius: 10px;
+    text-align: center;
+    width: 35vw;
+    height: 35vh;
+    z-index: 1;
+    position:absolute;
+    top: 30vh;
+    left: 35vw;
+    background-color:white;
+    box-sizing: border-box;
+    padding: 1%;
+    color: tomato;
+    font-weight:lighter;
+    transition: transform .2s;
+
+}
+/* 
+.addNewListActive:hover,
+.addNewItemActive:hover {
+    transform: scale(1.1);
+} */
+
+.addNewItemActive,
+.addAnotherItemActive {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid tomato;
+    border-radius: 10px;
+    text-align: center;
+    width: 35vw;
+    height: 35vh;
+    z-index: 1;
+    position:absolute;
+    top: 30vh;
+    left: 35vw;
+    background-color:white;
+    box-sizing: border-box;
+    padding: 1%;
+    color: tomato;
+    font-weight:lighter;
+    transition: transform .2s;
+}
+
+#itemBtn{
+    width: 100px;
+    height: 50px;
+    padding: 0%;
+}
+
+#anotherItemBtn {
+    width: 100px;
+    height: 50px;
+    padding: 0%;
+}
+
+.AddNewListTitle {
+    font-size: 36px;
+    font-weight: 100px;
+}
+.inputText{
+    width: 60%;
+    height:20%;
+    box-shadow: 1px 1px 4px gray;
+    border: 1px solid tomato;
+    border-radius:5px;
+    font-size: 20px;
+    position: relative;
+}
+
+.newButtonDiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 40%;
+    height: 10vh;
+
+}
+
+.btn{
+    color: white;
+    background-color: tomato;
+    border-radius: 50px;
+    border: none;
+    font-size: 24px;
+    margin: 2%;
+    padding: 2%;
+    position: relative;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+.btn-taskBody {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    height: 20%;
+    position: relative;
+}
+
+.btn:active {
+    transform: scale(0.9);
+
+}
+.btn-ListBody{
+    position: relative;
+}
+.removeTask {
+    position: absolute;
+    top: 210px;
+    left: 140px;
+}
+
+.listBtn{
+    width: 100px;
+    height: 50px;
+    padding: 2%;
+    margin: 2%;
+}
+.addTask {
+    position: absolute;
+    top: 210px;
+    right: -20px;
+}
+
+.pendingIcon {
+    font-size: 20px;
+}
+
+.pTask {
+    display: flex;
+    align-items: center;
+}
+
+.scratch {
+    font-size: larger;
+    margin: 0;
+}
+
+.me{
+    color: red;
+    text-decoration-line: line-through;
+}
+.inactive {
+    display: none;
+}
+.main2 {
+    display: none;
+}
+
+.main2.active {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
